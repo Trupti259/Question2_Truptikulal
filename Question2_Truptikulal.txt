@@ -1,0 +1,20 @@
+Question 2:
+Find number of small and capital letters in a string and replace all capital letters by same small letter and all small letters by same capital letters
+[Note :- Consider the string as "EduCatiON"]  
+
+
+<?php   
+   $string = "EduCatiON";  
+    for($i=0;$i<strlen($string);$i++)
+  {  
+    if($string[$i]>= 'a' && $string[$i] <= 'z')
+    {  
+      $string[$i] = strtoupper($string[$i]);  
+     }
+       elseif($string[$i] >= 'A' && $string[$i] <= 'Z')
+     {        
+        $string[$i] = strtolower($string[$i]);  
+      }  
+   }  
+echo "Replaced String : $string";  
+?> 
